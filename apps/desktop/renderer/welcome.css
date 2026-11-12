@@ -94,14 +94,48 @@ body {
 }
 
 .brand {
-  display: block;
+  display: inline-flex;
   flex: none;
-  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
   height: 80px;
   user-select: none;
   -webkit-user-drag: none;
-  align-self: end;
-  margin-bottom: -46px;
+}
+
+.brand-mark {
+  width: 64px;
+  height: 64px;
+  flex: none;
+  display: block;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.brand-text {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 14px;
+  line-height: 1;
+}
+
+.brand-product {
+  font-family: var(--dsw-font-family-brand);
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--dsw-alias-label-primary);
+}
+
+.brand-short {
+  font-family: var(--dsw-font-family-brand);
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.24em;
+  color: var(--dsw-alias-label-tertiary);
 }
 
 .tagline {

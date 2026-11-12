@@ -279,8 +279,8 @@
 .brandIdentity {
   display: inline-flex;
   align-items: center;
-  gap: 5px;
-  height: 24px;
+  gap: 7px;
+  height: 32px;
   min-width: 0;
 }
 
@@ -332,6 +332,39 @@
   font-size: 12px;
   line-height: 13px;
   letter-spacing: 0;
+}
+
+/* hlea brand: single-row wordmark (product name beside short code). */
+.hleaBrand {
+  flex: none;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+  height: 32px;
+  white-space: nowrap;
+}
+
+.hleaProductName {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: var(--dsw-alias-label-primary);
+}
+
+.hleaShortName {
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 12px;
+  letter-spacing: 0.12em;
+  color: var(--dsw-alias-label-tertiary);
+}
+
+@media (prefers-color-scheme: dark) {
+  .hleaShortName {
+    color: var(--dsw-alias-label-secondary);
+  }
 }
 
 .iconButton {
